@@ -2,9 +2,6 @@
 This is a runnable and robust version of CH-benchmark  Hybrid Transactional/Analytical Workload
 
 This work was originally published by
-
-
-
 [The Mixed Workload CH-benCHmark.](https://db.in.tum.de/research/projects/CHbenCHmark/?lang=en)
 
 We committed program optimization and solved several bugs related to memory leaks.
