@@ -12,11 +12,7 @@ This implementation of the CH-benCHmark was created for the UNIX platform. It us
 and pthreads.
 Additionally, it can handle different SQL dialects. 
 
-To add a new dialect:
-    - put a new dialect file in the "dialect" directory
-    - implement the interface given in "dialect/Dialect.h"
-    - see "dialect/HanaDialect.h" as example
-    - modify the "DialectStrategy::getInstance()" function in "dialect/DialectStrategy.cpp"
+
 
 
 To build it:
@@ -73,4 +69,10 @@ To run it:
 # Contributing
 
 This project so far provides DIALECT support for [SAP HANA](https://www.sap.com/sea/products/s4hana-erp.html?%20campaigncode=crm-ya22-int-1273119&source=ppc-sg-google_ads-search-71700000089530855-58700007563534098-s4hana_s4em-s4erp--&dfa=1&gclid=Cj0KCQiA64GRBhCZARIsAHOLriLy7FuLrAHo0F2Jfyq_iz_XwfOzbgO0qhZDXC_szZqYKHz_TKXDyF8aAjuSEALw_wcB&gclsrc=aw.ds) and [MySQL](https://www.mysql.com/). We welcome anyone to complete dialect support for other HTAP databases.
+
+To add a new dialect:
+    - put a new dialect file in the "dialect" directory
+    - implement the interface given in "dialect/Dialect.h"
+    - see "dialect/HanaDialect.h" as example
+    - modify the "DialectStrategy::getInstance()" function in "dialect/DialectStrategy.cpp"
 
