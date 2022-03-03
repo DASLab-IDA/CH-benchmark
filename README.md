@@ -5,9 +5,7 @@ This work was originally published by
 
 
 
-[The Mixed Workload CH-benCHmark. Proceedings of the 4th International Workshop on Testing Database Systems (DBTest), June 2011]: https://db.in.tum.de/research/projects/CHbenCHmark/?lang=en
-
-
+[The Mixed Workload CH-benCHmark.]: https://db.in.tum.de/research/projects/CHbenCHmark/?lang=en
 
 We committed program optimization and solved several bugs related to memory leaks.
 
