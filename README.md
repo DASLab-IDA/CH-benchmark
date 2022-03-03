@@ -4,9 +4,7 @@ This is a runnable and robust version of CH-benchmark  Hybrid Transactional/Anal
 This work was originally published by
 [The Mixed Workload CH-benCHmark.](https://db.in.tum.de/research/projects/CHbenCHmark/?lang=en)
 
-We committed program optimization and solved several bugs related to memory leaks.
-
-This current repo is now finely adapted to latest version of software and hardware systems.
+We committed program optimization and solved several bugs related to memory leaks and now this repo is finely adapted to latest version of software and hardware systems.
 
 
 
