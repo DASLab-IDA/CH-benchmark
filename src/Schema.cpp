@@ -69,7 +69,8 @@ bool Schema::importCSV(SQLHSTMT& hStmt){
 	}
 
 	for(unsigned int i = 0; i < DialectStrategy::getInstance()->getImportPrefix().size(); i++){
-		if(!DbcTools::executeServiceStatement(hStmt, string(DialectStrategy::getInstance()->getImportPrefix()[i] + Config::getInitialDbCreationPath() + DialectStrategy::getInstance()->getImportSuffix()[i]).c_str())){
+		// if(!DbcTools::executeServiceStatement(hStmt, string(DialectStrategy::getInstance()->getImportPrefix()[i] + Config::getInitialDbCreationPath() + DialectStrategy::getInstance()->getImportSuffix()[i]).c_str())){
+		if(!DbcTools::executeServiceStatement(hStmt, (string(DialectStrategy::getInstance()->getImportPrefix()[i] )+ string( DialectStrategy::getInstance()->getImportSuffix()[i])).c_str())){
 			Log::l2() << Log::tm() << "-failed\n";
 			return 0;
 		}

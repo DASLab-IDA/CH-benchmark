@@ -17,12 +17,14 @@ limitations under the License.
 #include "DialectStrategy.h"
 #include "MySqlDialect.h"
 #include "HanaDialect.h"
+#include "PostgresDialect.h"
 
 Dialect* DialectStrategy::instance = 0;
 
 Dialect* DialectStrategy::getInstance(){
 if(instance == 0)
 	//instance = new HanaDialect();
-	instance = new MySqlDialect();
+	//instance = new MySqlDialect();
+	instance = new PostgresDialect();
 	return instance;
 }
